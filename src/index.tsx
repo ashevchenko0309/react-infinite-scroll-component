@@ -66,6 +66,8 @@ export default class InfiniteScroll extends Component<Props, State> {
   private maxPullDownDistance = 0;
 
   componentDidMount() {
+    console.log('mount')
+  
     if (typeof this.props.dataLength === 'undefined') {
       throw new Error(
         `mandatory prop "dataLength" is missing. The prop is needed` +
